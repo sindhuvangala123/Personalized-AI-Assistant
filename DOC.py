@@ -10,6 +10,9 @@ st.markdown("<h1 style='text-align: center;'>💬 Personalized AI Assistant</h1>
 # --- API Key ---
 # move this to st.secrets or env in production
 
+api_key = st.secrets["CHATGROQ_API_KEY"]
+
+
 # --- Session State ---
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
